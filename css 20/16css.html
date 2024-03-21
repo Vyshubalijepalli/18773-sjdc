@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Buttons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Baseline button styles (apply to all buttons) */
+    button {
+        display: inline-block;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        /* Indicates clickable element */
+    }
+
+    /* Primary Button Style */
+    .primary-btn {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    .primary-btn:hover {
+        background-color: #0062cc;
+    }
+
+    .primary-btn:active {
+        background-color: #005cbf;
+        transform: translateY(2px);
+        /* Simulates a slight press effect */
+    }
+
+    /* Secondary Button Style */
+    .secondary-btn {
+        background-color: #f1f1f1;
+        color: #333;
+    }
+
+    .secondary-btn:hover {
+        background-color: #e0e0e0;
+    }
+
+    .secondary-btn:active {
+        background-color: #d0d0d0;
+        transform: translateY(2px);
+        /* Simulates a slight press effect */
+    }
+
+    /* Tertiary Button Style */
+    .tertiary-btn {
+        background-color: transparent;
+        color: #007bff;
+        border: 2px solid #007bff;
+    }
+
+    .tertiary-btn:hover {
+        background-color: #eee;
+    }
+
+    .tertiary-btn:active {
+        background-color: #ddd;
+        border-color: #0062cc;
+        transform: translateY(2px);
+        /* Simulates a slight press effect */
+    }
+</style>
+
+<body>
+<header>CSS 16</header>
+    <h1>Creating Buttons</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus quod odit ut ea nisi, sunt consequatur dolor
+        similique sequi dolores, delectus, repellat maxime? Qui blanditiis, consequatur suscipit pariatur culpa illum.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut commodi atque nemo ex! Ducimus, similique? Quaerat
+        veniam, ad tempore, facilis quia, nemo odit tempora recusandae quam fugiat aliquam sint minus.</p>
+    <button class="primary-btn">Click Me</button>
+    <button class="secondary-btn">Learn More</button>
+    <button class="tertiary-btn">Download Now</button>
+</body>
+
+</html>

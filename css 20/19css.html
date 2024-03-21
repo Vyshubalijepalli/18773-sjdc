@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Defines two columns of equal width */
+        grid-gap: 30px; /* Adds spacing between grid items */
+        width: 600px; /* Sets container width (optional) */
+        margin: 0 auto; /* Centers the container horizontally (optional) */
+      }
+      
+      .grid-item {
+        background-color: #a8a0c9;
+        padding: 10px;
+        text-align: center;
+      }
+      
+</style>
+<body style="background-color: rgb(247, 241, 234);">
+  <div class="grid-container">
+    <div class="grid-item item-1">HELLO</div>
+    <div class="grid-item item-2">HELLO</div>
+    <div class="grid-item item-3">HELLO</div>
+    <div class="grid-item item-4">HELLO</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>list and list styling</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Remove default list styles */
+ul {
+    list-style: none; /* Hides default bullets */
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px; /* Add spacing between list items */
+  }
+  
+  /* Custom Square Bullet Style */
+  .square-list li {
+    position: relative; /* Allows positioning of pseudo-element */
+    padding-left: 20px; /* Adjusts indentation for bullet */
+  }
+  
+  .square-list li::before {
+    content: "✔"; /* Content for the bullet (replace with desired symbol) */
+    color: #142538; /* Bullet color */
+    font-size: 14px; /* Bullet size */
+    position: absolute; /* Positions the bullet before the list item text */
+    left: 0; /* Aligns the bullet to the left */
+    top: 5px; /* Adjusts vertical position of the bullet */
+  }
+  
+  /* Custom Checkmark Bullet Style */
+  .checkmark-list li::before {
+    content: "✓"; /* Content for the bullet (replace with desired symbol) */
+    color: #33cc33; /* Bullet color */
+    font-size: 16px; /* Bullet size */
+    position: absolute; /* Positions the bullet before the list item text */
+    left: 0; /* Aligns the bullet to the left */
+    top: 2px; /* Adjusts vertical position of the bullet */
+  }
+  
+</style>
+<body>
+    <h1>css 15</h1>
+  <h2>Default List</h2>
+  <ul>
+    <li>tony</li>
+    <li>peter</li>
+    <li>nat</li>
+  </ul>
+
+  <h2>Custom Bullet List (Square Bullets)</h2>
+  <ul class="square-list">
+    <li>milli</li>
+    <li>nancy</li>
+    <li>mike</li>
+  </ul>
+
+  <h2>Custom Bullet List (Checkmarks)</h2>
+  <ul class="checkmark-list">
+    <li>dusten</li>
+    <li>zendeya</li>
+    <li>mark</li>
+  </ul>
+</body>
+</html>

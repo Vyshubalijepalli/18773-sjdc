@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Baseline styles for all screen sizes */
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header,
+    main,
+    footer {
+        padding: 20px;
+    }
+
+    header {
+        background-color: #d2caca;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    nav {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        margin-right: 20px;
+        color: #333;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        flex: 1 0 50%;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        flex: 2 0 100%;
+    }
+
+    article {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #a00d0d;
+    }
+
+    footer {
+        background-color: #c6bfbf;
+        text-align: center;
+    }
+
+    /* Media Queries for different screen sizes */
+
+    @media only screen and (max-width: 768px) {
+        /* Styles for screens smaller than 768px */
+
+        header {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        nav a {
+            margin-bottom: 10px;
+        }
+
+        .hero,
+        .content {
+            flex: 1 0 100%;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Responsive Website</h1>
+        <h2>css 12</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome!</h2>
+            <p style="background-color: rgb(185, 149, 129);">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ipsam asperiores, beatae nisi impedit velit
+                corrupti non. Aliquid nulla neque, velit, assumenda officia sint iusto alias itaque mollitia accusantium
+                est modi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, fugit aspernatur odio
+                sit facilis iusto ab est laboriosam tenetur voluptatem eos hic vel. At aliquam inventore veniam rem
+                magni temporibus?</p>
+        </section>
+
+        <section class="content">
+            <article>
+                <h3>hello avenger</h3>
+                <p>Lorem ipsum dolor sit am Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus dolorem
+                    similique non accusamus eligendi magni nam aut harum, excepturi in velit quae ipsam corporis
+                    sapiente repellat blanditiis quod repudiandae et!.</p>
+            </article>
+            <article>
+                <h3>Wakanda Forever</h3>
+                <p>Donec euismod bibendum laoreet. Proin semper libero vel enim.. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Fugit deleniti id odio molestias facilis quidem modi a cumque ipsa doloribus,
+                    impedit, omnis veniam libero in nihil dolores. Autem, beatae omnis..</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>@vyshnavi</p>
+    </footer>
+</body>
+
+</html>

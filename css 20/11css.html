@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+
+    main {
+        display: flex;
+    }
+
+    .content {
+        flex: 3;
+        padding: 20px;
+    }
+
+    .sidebar {
+        flex: 1;
+        padding: 20px;
+        background-color: #88d1b6;
+    }
+
+    footer {
+        background-color: #f1f1f1;
+        padding: 15px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>css 11</h1>
+        <h2>Basic layout</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>Main Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vero nisi, ipsum laborum nesciunt
+                tempore quos unde dolore velit numquam tenetur quibusdam error similique labore quo debitis rem nulla
+                nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia necessitatibus, accusamus ullam
+                non dicta delectus iure labore debitis et eius eveniet, hic inventore alias adipisci temporibus cum,
+                officia voluptatem quas! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio cumque porro
+                doloribus eos molestias vero architecto quo amet! Autem possimus, impedit magni quae aperiam quam
+                expedita porro nisi illo libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo hic
+                autem, assumenda voluptatum dolores architecto recusandae dolor dolorum. Distinctio est iure error,
+                labore quam dignissimos laborum aliquid natus iusto adipisci. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Totam ullam tempora exercitationem cum mollitia aliquam suscipit, delectus ad
+                doloremque corporis culpa laudantium? Harum aliquam eius ipsa explicabo et ab in? Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Aut harum quia illo magni nihil! Consequuntur repellendus eaque nulla
+                harum dolorum. Possimus tempore, fuga odio placeat debitis eum optio non quo? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Illum molestias perferendis neque blanditiis ex quasi? Et ducimus itaque
+                architecto quo quidem, quam distinctio facilis, ratione tenetur vitae, similique ab tempora!.</p>
+        </section>
+
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Link 5</a></li>
+                <li><a href="#">Link 6</a></li>
+                <li><a href="#">Link 7</a></li>
+                <li><a href="#">Link 8</a></li>
+                <li><a href="#">Link 9</a></li>
+                <li><a href="#">Link 10</a></li>
+                <li><a href="#">Link 11</a></li>
+                <li><a href="#">Link 12</a></li>
+                <li><a href="#">Link 13</a></li>
+                <li><a href="#">Link 14</a></li>
+                <li><a href="#">Link 15</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <h1>FOOTER</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate earum deleniti, consequuntur ex
+            obcaecati harum ab. Asperiores, accusantium! Nesciunt eligendi possimus eius quia! Iste consequuntur quidem
+            nemo quis exercitationem.</p>
+    </footer>
+</body>
+
+</html>
